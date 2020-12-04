@@ -1,0 +1,144 @@
+@font-face{
+	font-family: neuebit;
+ 	src: url(NeueBit-Bold.otf);
+}
+
+@font-face{
+	font-family: mondwest;
+ 	src: url(Mondwest-Regular.otf);
+}
+
+body{
+	font-family: mondwest;
+	font-size: 1.8vw;
+	color: #CC66FF;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+/* Track */
+/*div::-webkit-scrollbar-track {
+	border: 2px solid blue;
+	border-radius: 10px;
+}*/
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CC66FF; 
+/*  border-radius: 10px;*/
+}
+.name{
+	position: absolute;
+	top: 3vh;
+	right: 5vw;
+}
+.input{
+	position: absolute;
+	top: 8vh;
+	right: 5vw;
+	width: 10vw;
+	height: auto;
+	border: 2px solid #CC66FF;
+	padding: 2vh;
+	display: flex;
+	flex-direction: column;
+}
+
+
+label{
+	position: relative;
+	margin: .5vh;
+}
+
+label:hover{
+	background-color: #CC66FF;
+	color:white;
+}
+
+#parent1{
+	position: relative;
+	top: 2vh;
+	left: 2vw;
+	width: 73vw;
+	height: 75vh;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 2px solid #CC66FF;
+	margin-bottom: 3vh;
+}
+
+#parent1 img{
+	height: 21vw;
+}
+
+#parent2{
+	position: relative;
+	top: 2vh;
+	left: 20vw;
+	width: 73vw;
+	height: 30vw;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 2px solid #CC66FF;
+	margin-bottom: 3vh;
+}
+
+#parent2 img{
+	height: 10vw;
+	margin: 2vw;
+}
+
+#parent3{
+	position: relative;
+	top: 2vh;
+	left: 2vw;
+	width: 78vw;
+	height: 50vw;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 2px solid #CC66FF;
+	margin-bottom: 3vh;
+}
+
+#parent3 img{
+	height: 21vw;
+
+}
+
+
+img:hover {
+  box-shadow: 0 0 5px 2px #CC66FF;
+  z-index:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+@font-face{
+	font-family: neuebit;
+ 	src: url(NeueBit-Bold.otf);
+}
+
+@font-face{
+	font-family: mondwest;
+ 	src: url(Mondwest-Regular.otf);
+}
+
+body{
+	font-family: mondwest;
+	font-size: 1.8vw;
+	color: #6E7EFF;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+/* Track */
+/*div::-webkit-scrollbar-track {
+	border: 2px solid blue;
+	border-radius: 10px;
+}*/
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6E7EFF; 
+/*  border-radius: 10px;*/
+}
+
+.name{
+	position: relative;
+	top: 3vh;
+	left: 3vw;
+	width: 17vw;
+
+}
+/*.input{
+	position: relative;
+	top: 8vh;
+	width: 10vw;
+	height: auto;
+	border: 2px solid #CC66FF;
+	padding: 2vh;
+	display: flex;
+	flex-direction: column;
+}*/
+
+label{
+	position: relative;
+	margin: .5vh;
+}
+
+label:hover{
+	background-color: #6E7EFF;
+	color:white;
+}
+
+img:hover {
+  box-shadow: 0 0 5px 2px #6E7EFF;
+  z-index:1;
+}
+
+#parent1{
+	position: absolute;
+	top: 4vh;
+	right: 2vw;
+	width: 73vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: center;
+	overflow-y: scroll;
+	border: 2px solid #6E7EFF;
+	margin:auto;
+
+}
+
+#parent1 img{
+	max-width: 10vw;
+	margin: .7vw;
+}
+
+#dates{
+	position: relative;
+	top: 1vh;
+    left: -26vw;
+    padding: 1vw;
+}
+
+#pictures, #pictures2{
+	padding-bottom: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+@font-face{
+	font-family: mondwest;
+ 	src: url(Mondwest-Regular.otf);
+}
+
+@font-face{
+	font-family: neuebit;
+ 	src: url(NeueBit-Bold.otf);
+}
+
+ 
+body, html{
+	overflow: hidden;
+	font-family: mondwest;
+	/*cursor: url("pets/ball.png"), auto;*/
+}
+
+button{
+	position: absolute;
+ 	top: 2vw;
+ 	right: 2vw;
+	padding: .5rem;
+	width: 14vw;
+	font-size: 4vw;
+	font-weight: bold;
+	color: blue;
+	cursor: pointer;
+	z-index: 2;
+	font-family: neuebit;
+	background-color: transparent;
+	border:none;
+	transition: all 1s;
+/*	animation-name: button;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;*/
+
+}
+
+button:hover{
+	text-decoration: underline;
+}
+
+/*@keyframes button {
+  from {
+  	background-color: blue;
+  	color: white;
+  }
+  to {
+  	background-color: white;
+  	color: blue;
+  }
+}*/
+
+#container{
+	bottom: -3vw;
+	left: 1vw;
+	position: absolute;
+}
+
+#time{
+	font-size: 2vw;
+	position: relative;
+	left: 10vw;
+    top: 2vw;
+    font-family: neuebit;
+}
+
+
+#doggy{
+	width: 15vw;
+	bottom: 0vw;
+	left: -1vw;
+	position: relative;
+	
+}
+
+
+
+
+
