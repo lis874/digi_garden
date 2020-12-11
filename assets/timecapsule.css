@@ -38,20 +38,17 @@ body{
 	width: 17vw;
 
 }
-/*.input{
-	position: relative;
-	top: 8vh;
-	width: 10vw;
-	height: auto;
-	border: 2px solid #CC66FF;
-	padding: 2vh;
-	display: flex;
-	flex-direction: column;
-}*/
+
+.des{
+	position: absolute;
+	bottom: 5vh;
+	left: 3vw;
+	width: 17vw;
+}
 
 label{
 	position: relative;
-	margin: .5vh;
+	smargin: .5vh;
 }
 
 label:hover{
@@ -63,6 +60,7 @@ img:hover {
   box-shadow: 0 0 5px 2px #6E7EFF;
   z-index:1;
 }
+
 
 #parent1{
 	position: absolute;
@@ -89,12 +87,13 @@ img:hover {
 #dates{
 	position: relative;
 	top: 1vh;
-    left: -26vw;
+    left: -27vw;
     padding: 1vw;
 }
 
-#pictures, #pictures2{
+#pictures, #pictures2, #pictures3{
 	padding-bottom: 8vh;
+	padding-left: .6vw;
 }
 
 

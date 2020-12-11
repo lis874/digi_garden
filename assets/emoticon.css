@@ -1,0 +1,40 @@
+html, body{
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+@font-face{
+	font-family: neuebit;
+ 	src: url(NeueBit-Bold.otf);
+}
+
+h2{
+	cursor: move;
+}
+
+
+#intro{
+	width: auto;
+	height: 10vw;
+	position: absolute;
+	top: 44vh;
+	left: 35vw;
+	/*border: 5px solid blue;*/
+	font-family: neuebit;
+	font-size: 3vw;
+	text-align: center;
+}
+
+#help{
+    width: 22vw;
+    height: auto;
+    position: absolute;
+    top: 5vh;
+    right: 3vw;
+    font-family: neuebit;
+    font-size: 3vw;
+    display: none;
+    border: 3px solid black;
+    padding: 1vw;
+}
+

@@ -34,6 +34,10 @@ function initialize(){
 
 function startListening(){
   annyang.start();
+
+  let intro = document.getElementById('intro');
+  intro.style.display = "block";
+
 }
 
 function hello(){
@@ -120,7 +124,9 @@ function showTime(){
   updateClock();
 }
 
-
+function myFunction() {
+  document.getElementById("intro").style.display = "none";
+}
 
 
 

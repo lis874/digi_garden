@@ -11,7 +11,7 @@
  
 body, html{
 	overflow: hidden;
-	font-family: mondwest;
+	font-family: neuebit;
 	/*cursor: url("pets/ball.png"), auto;*/
 }
 
@@ -51,6 +51,26 @@ button:hover{
   	color: blue;
   }
 }*/
+
+#intro{
+	position: absolute;
+	bottom:2vh;
+	right: 2vw;
+	width:15vw;
+	height: auto;
+	background-color: blue;
+	color: white;
+	padding: 1vw;
+	font-size: 2vw;
+	display: none;
+}
+
+#close{
+	position: absolute;
+	right: 1vw;
+	top: 1vw;
+	cursor: pointer;
+}
 
 #container{
 	bottom: -3vw;

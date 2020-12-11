@@ -1,54 +1,52 @@
 var loadMeme = function(event) {
-	// var image = document.createElement('img');
-	// image.src = URL.createObjectURL(event.target.files[0]);
-	// document.getElementById('body').appendChild('img'); 
-
 
 	var image = new Image();
 	var url = URL.createObjectURL(event.target.files[0]);
 	image.src = url;
 
+  document.getElementsByTagName('body')[0].appendChild(image);
 
-	theParent = document.getElementById("parent1");
+  let $draggable = $(image).draggabilly();
 
-	// append theKid to the end of theParent
-	theParent.appendChild(image);
-
-	// prepend theKid to the beginning of theParent
-	theParent.insertBefore(image, theParent.firstChild);
 };
 
-
-var loadPixel = function(event) {
-
-	var image = new Image();
-	var url = URL.createObjectURL(event.target.files[0]);
-	image.src = url;
-
-
-	theParent = document.getElementById("parent2");
-
-	theParent.appendChild(image);
-
-	theParent.insertBefore(image, theParent.firstChild);
-};
+let $draggable = $('img').draggabilly();
 
 
 
-var loadGif = function(event) {
-
-  var image = new Image();
-  var url = URL.createObjectURL(event.target.files[0]);
-  image.src = url;
 
 
-  theParent = document.getElementById("parent3");
+var divs = document.getElementsByTagName('img');
 
-  theParent.appendChild(image);
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
 
-  theParent.insertBefore(image, theParent.firstChild);
-};
+for ( var i=0; i < divs.length; i++ ) {
+  
+    var thisDiv = divs[i];
+    
+  
+    randomTop = getRandomNumber(0, winHeight);
+    randomLeft = getRandomNumber(0, winWidth);
+    
+    thisDiv.style.top = randomTop +"px";
+    thisDiv.style.left = randomLeft +"px";
+    
+}
 
+function getRandomNumber(min, max) {
+
+  return Math.random() * (max - min) + min;
+    
+}
+
+
+
+setTimeout(fade_out, 5000);
+
+function fade_out() {
+  $("#parent1").fadeOut().empty();
+}
 
 
 
