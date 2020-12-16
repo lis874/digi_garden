@@ -143,6 +143,7 @@ $(document).on('keypress', function(e) {
 
 
     $('#intro').remove();
+    $('#name').css("display", "block");
     $('#help').css("display", "block");
 
   } else {

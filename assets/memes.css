@@ -16,21 +16,35 @@ body{
 	background-color: black;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #53FFBB;
+}
+
+a:hover{
+	background-color: #53FFBB;
+	color:black;
+}
+
 ::-webkit-scrollbar {
   width: 1vw;
 }
 
-/* Track */
-/*div::-webkit-scrollbar-track {
-	border: 2px solid blue;
-	border-radius: 10px;
-}*/
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #53FFBB; 
-/*  border-radius: 10px;*/
+
 }
+
+#return{
+	position: fixed;
+	top: 2vh;
+	left: 2vw;
+
+}
+
 .name{
 	position: fixed;
 	bottom: 2vh;

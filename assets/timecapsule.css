@@ -19,29 +19,38 @@ body{
   width: 1vw;
 }
 
-/* Track */
-/*div::-webkit-scrollbar-track {
-	border: 2px solid blue;
-	border-radius: 10px;
-}*/
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #6E7EFF; 
-/*  border-radius: 10px;*/
+
 }
 
-.name{
-	position: relative;
-	top: 3vh;
-	left: 3vw;
+a:link {
+  color: #6E7EFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6E7EFF;
+}
+
+a:hover {
+  /*text-decoration: underline;*/
+  background-color: #6E7EFF;
+  color:white;
+}
+
+#name{
+	position: absolute;
+	bottom: 2.5vh;
+	left: 2.5vw;
 	width: 17vw;
 
 }
 
 .des{
 	position: absolute;
-	bottom: 5vh;
+	top: 3.5vh;
 	left: 3vw;
 	width: 17vw;
 }
@@ -64,10 +73,10 @@ img:hover {
 
 #parent1{
 	position: absolute;
-	top: 4vh;
+	top: 3vh;
 	right: 2vw;
 	width: 73vw;
-	height: 90vh;
+	height: 93vh;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
